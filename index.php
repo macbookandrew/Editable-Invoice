@@ -21,11 +21,11 @@
 		
 		<div id="identity">
 		
-            <textarea id="address">Chris Coyier
-123 Appleseed Street
-Appleville, WI 53719
+            <textarea id="address">Andrew Minion
+123 Anystreet
+Anytown, NC 28150
 
-Phone: (555) 555-5555</textarea>
+Phone: 222-222-2222</textarea>
 
             <div id="logo">
 
@@ -41,7 +41,7 @@ Phone: (555) 555-5555</textarea>
                 <input id="imageloc" type="text" size="50" value="" /><br />
                 (max width: 540px, max height: 100px)
               </div>
-              <img id="image" src="images/logo.png" alt="logo" />
+              <img id="image" src="images/AndrewRMinion-logo.svg" alt="logo" />
             </div>
 		
 		</div>

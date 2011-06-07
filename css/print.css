@@ -1,4 +1,6 @@
+/* @override http://localhost/~andy/invoice/css/print.css */
+
 #hiderow,
 .delete {
-  display: none;
+	display: none;
 }

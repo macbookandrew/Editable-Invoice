@@ -84,7 +84,7 @@ City, State 12345</textarea>
 		      <th>Price</th>
 		  </tr>
 		  
-		  <tr class="item-row">
+		  <tr class="item-row removable">
 		      <td class="item-name"><div class="delete-wpr"><textarea>Web Updates</textarea><a class="delete" href="javascript:;" title="Remove row">X</a></div></td>
 		      <td class="description"><textarea>Monthly web updates for http://widgetcorp.com (Nov. 1&ndash;Nov. 30, 2011)</textarea></td>
 		      <td><textarea class="cost">$650.00</textarea></td>
@@ -92,15 +92,14 @@ City, State 12345</textarea>
 		      <td><span class="price">$650.00</span></td>
 		  </tr>
 		  
-		  <tr class="item-row">
+		  <tr class="item-row removable">
 		      <td class="item-name"><div class="delete-wpr"><textarea>SSL Renewals</textarea><a class="delete" href="javascript:;" title="Remove row">X</a></div></td>
-
 		      <td class="description"><textarea>Yearly renewals of SSL certificates on main domain and several subdomains</textarea></td>
 		      <td><textarea class="cost">$75.00</textarea></td>
 		      <td><textarea class="qty">3</textarea></td>
 		      <td><span class="price">$225.00</span></td>
 		  </tr>
-		  
+		  		  
 		  <tr id="hiderow">
 		    <td colspan="5"><a id="addrow" href="javascript:;" title="Add a row">Add a row</a></td>
 		  </tr>
@@ -109,6 +108,11 @@ City, State 12345</textarea>
 		      <td colspan="2" class="blank"> </td>
 		      <td colspan="2" class="total-line">Subtotal</td>
 		      <td class="total-value"><div id="subtotal">$875.00</div></td>
+		  </tr>
+		  <tr class="removable">
+		      <td colspan="2" class="blank"> </td>
+		      <td colspan="2" class="total-line"><div class="delete-wpr"><a class="delete" href="javascript:;" title="Remove row">X</a></div>Discount</td>
+		      <td class="total-value"><textarea id="discount">$0.00</textarea></td>
 		  </tr>
 		  <tr>
 
@@ -134,7 +138,7 @@ City, State 12345</textarea>
 		  <h5>Terms</h5>
 		  <textarea>NET 30 Days. Finance Charge of 1.5% will be made on unpaid balances after 30 days.</textarea>
 		</div>
-	
+		
 	</div>
 	
 </body>

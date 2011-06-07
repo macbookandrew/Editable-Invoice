@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 	
-	<title>Editable Invoice</title>
+	<title><?php echo date('Y-m-d'); ?> Customer Name - Invoice 130</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
@@ -61,7 +61,7 @@ c/o Steve Widget</textarea>
                 <tr>
 
                     <td class="meta-head">Date</td>
-                    <td><textarea id="date">December 15, 2009</textarea></td>
+                    <td><textarea id="date"><?php echo date('F d, Y'); ?></textarea></td>
                 </tr>
                 <tr>
                     <td class="meta-head">Amount Due</td>

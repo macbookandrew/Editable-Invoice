@@ -51,12 +51,14 @@ Phone: 222-222-2222</textarea>
 		<div id="customer">
 
             <textarea id="customer-title">Widget Corp.
-c/o Steve Widget</textarea>
+c/o Steve Widget
+Address
+City, State 12345</textarea>
 
             <table id="meta">
                 <tr>
                     <td class="meta-head">Invoice #</td>
-                    <td><textarea>000123</textarea></td>
+                    <td><textarea>000140</textarea></td>
                 </tr>
                 <tr>
 
@@ -84,7 +86,7 @@ c/o Steve Widget</textarea>
 		  
 		  <tr class="item-row">
 		      <td class="item-name"><div class="delete-wpr"><textarea>Web Updates</textarea><a class="delete" href="javascript:;" title="Remove row">X</a></div></td>
-		      <td class="description"><textarea>Monthly web updates for http://widgetcorp.com (Nov. 1 - Nov. 30, 2009)</textarea></td>
+		      <td class="description"><textarea>Monthly web updates for http://widgetcorp.com (Nov. 1&ndash;Nov. 30, 2011)</textarea></td>
 		      <td><textarea class="cost">$650.00</textarea></td>
 		      <td><textarea class="qty">1</textarea></td>
 		      <td><span class="price">$650.00</span></td>

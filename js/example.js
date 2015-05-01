@@ -61,15 +61,17 @@ function roundNumber(number,decimals) {
 }
 
 function update_total() {
-  var total = 0;
+  var subtotal = 0;
   $('.price').each(function(i){
     price = $(this).html().replace("$","");
-    if (!isNaN(price)) total += Number(price);
+    if (!isNaN(price)) subtotal += Number(price);
   });
   
-  var subtotal = total;
-  
-  total = (total - $("#discount").val().replace("$",""));
+  if ( $("#discount").length ) {
+    total = (subtotal - $("#discount").val().replace("$",""));
+  } else {
+    total = subtotal;
+  }
   
   total = roundNumber(total,2);
   subtotal = roundNumber(subtotal,2);

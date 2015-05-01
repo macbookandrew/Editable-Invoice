@@ -4,12 +4,25 @@
 <head>
 	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 	
-	<title><?php echo date('Y-m-d'); ?> Customer Name - Invoice 130</title>
+	<title>Customer Name - Invoice 140</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
 	<script type="text/javascript" src="js/example.js"></script>
+    <script type="text/javascript">
+        $( document ).ready( function() {
+            var todayDate = print_today();
+            $( '#date' ).html( todayDate );
+            updateDates();
+            $( '#invoiceNum, #date, #customer-title' ).blur( function() { updateDates(); });
+        });
+        function updateDates() {
+            var lines = $( '#customer-title' ).val().split( '\n' ),
+                customerName = lines[0];
+            document.title = $( '#date' ).val() + ' ' + customerName + ' - Invoice ' + $( '#invoiceNum' ).val();
+        }
+    </script>
 
 </head>
 
@@ -58,12 +71,12 @@ City, State 12345</textarea>
             <table id="meta">
                 <tr>
                     <td class="meta-head">Invoice #</td>
-                    <td><textarea>000140</textarea></td>
+                    <td><textarea id="invoiceNum">000140</textarea></td>
                 </tr>
                 <tr>
 
                     <td class="meta-head">Date</td>
-                    <td><textarea id="date"><?php echo date('F d, Y'); ?></textarea></td>
+                    <td><textarea id="date">May 1, 2015</textarea></td>
                 </tr>
                 <tr>
                     <td class="meta-head">Amount Due</td>

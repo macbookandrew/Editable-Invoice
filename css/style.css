@@ -109,6 +109,11 @@ table td, table th {
 	display: none;
 }
 
+#image {
+	height: 100px;
+	max-width: 500px;
+}
+
 #customer-title {
 	font-size: 18px;
 	font-weight: bold;

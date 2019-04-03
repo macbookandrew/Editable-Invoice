@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 
-	<title>Customer Name - Invoice 140</title>
+	<title>Invoice 140 - Customer Name - Date</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
@@ -19,8 +19,13 @@
         });
         function updateDates() {
             var lines = $( '#customer-title' ).val().split( '\n' ),
-                customerName = lines[0];
-            document.title = $( '#date' ).val() + ' ' + customerName + ' - Invoice ' + $( '#invoiceNum' ).val();
+                customerName = lines[0],
+				invoiceNum = $('#invoiceNum').val(),
+				originalDate = $( '#date' ).val(),
+				dateObject = new Date(originalDate),
+				formattedDate = dateObject.toISOString().substring(0, 10);
+
+			document.title = 'Invoice ' + invoiceNum + ' - ' + customerName + ' - ' + formattedDate;
         }
     </script>
 
